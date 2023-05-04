@@ -1,6 +1,12 @@
 package org.example.Database;
 
+import org.example.OOP.PRODUCT_STATUS;
+import org.example.OOP.Product;
+
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Database {
     public static class DatabaseControl {
@@ -37,6 +43,47 @@ public class Database {
                 throw new RuntimeException(ex);
             }
             return false;
+        }
+
+        public static Product getProductFromId(int id)
+        {
+            try {
+                Connection connection = DriverManager.getConnection(connectionString);
+                PreparedStatement statement = connection.prepareStatement("SELECT * FROM PRODUCTS WHERE PRODUCT_ID = ?");
+                statement.setInt(1, id);
+                ResultSet result = statement.executeQuery();
+                while (result.next()) {
+                    int product_id = result.getInt(1);
+                    String name = result.getString(2);
+                    int owner_id = result.getInt(3);
+                    String status = result.getString(4);
+                    return new Product(product_id, owner_id, name, PRODUCT_STATUS.CANCELLED);
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            return null;
+        }
+
+        public static Product[] getProducts()
+        {
+            List<Product> finalResult = new LinkedList<Product>();
+            try {
+                Connection connection = DriverManager.getConnection(connectionString);
+                PreparedStatement statement = connection.prepareStatement("SELECT * FROM PRODUCTS");
+                ResultSet result = statement.executeQuery();
+                while (result.next()) {
+                    int product_id = result.getInt(1);
+                    String name = result.getString(2);
+                    int owner_id = result.getInt(3);
+                    String status = result.getString(4);
+                    finalResult.add(new Product(product_id, owner_id, name, PRODUCT_STATUS.CANCELLED));
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            Product[] returnResult = finalResult.toArray(new Product[finalResult.size()]);
+            return returnResult;
         }
     }
 }

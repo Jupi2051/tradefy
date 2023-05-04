@@ -1,23 +1,15 @@
 package org.example.OOP;
 
 public class Product {
-    private int productId;
-    private String name;
+    public final int productId;
+    public final String name;
+    public final int ownerId;
     public PRODUCT_STATUS status;
 
-    int getProductId()
-    {
-        return this.productId;
-    }
-
-    String getProductName()
-    {
-        return this.name;
-    }
-
-    Product (int id, String name, PRODUCT_STATUS status)
+    public Product(int id, int ownerId, String name, PRODUCT_STATUS status)
     {
         this.productId = id;
+        this.ownerId = ownerId;
         this.name = name;
         this.status = status;
     }
