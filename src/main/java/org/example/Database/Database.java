@@ -60,7 +60,7 @@ public class Database {
                     return new Product(product_id, owner_id, name, PRODUCT_STATUS.CANCELLED);
                 }
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                System.out.println("Error with getting product.");
             }
             return null;
         }
@@ -77,10 +77,11 @@ public class Database {
                     String name = result.getString(2);
                     int owner_id = result.getInt(3);
                     String status = result.getString(4);
-                    finalResult.add(new Product(product_id, owner_id, name, PRODUCT_STATUS.CANCELLED));
+
+                    finalResult.add(new Product(product_id, owner_id, name, PRODUCT_STATUS.valueOf(status)));
                 }
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                System.out.println("Error while parsing product out of many.");
             }
             Product[] returnResult = finalResult.toArray(new Product[finalResult.size()]);
             return returnResult;
