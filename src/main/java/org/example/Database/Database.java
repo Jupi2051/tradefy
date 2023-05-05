@@ -11,8 +11,8 @@ import java.util.List;
 public class Database {
     public static class DatabaseControl {
         private static String connectionString = "jdbc:sqlserver://localhost;encrypt=false;integratedSecurity=false;user=auctionApp;password=1234";
-        public static boolean InitilizeDatabase()
-        {
+
+        public static boolean InitilizeDatabase() {
             try {
                 System.out.println("Attempting to connect to the database....");
 
@@ -29,9 +29,7 @@ public class Database {
                     System.out.println("created Bids table...");
                     statementExecutable.execute("CREATE TABLE SALES_COMMISSIONS (SALES_ID INT IDENTITY, PRODUCT_ID INT, DATE DATE, AMOUNT NUMERIC, BUYER_ID INT, SELLER_ID INT, CONSTRAINT SALES_PK PRIMARY KEY (SALES_ID), CONSTRAINT SALES_FK FOREIGN KEY (PRODUCT_ID) REFERENCES PRODUCTS (PRODUCT_ID))");
                     System.out.println("created sales_commissions table...");
-                }
-                catch (Exception exception)
-                {
+                } catch (Exception exception) {
                     System.out.println("Tables already exist.");
                 }
 
@@ -45,25 +43,31 @@ public class Database {
             return false;
         }
 
-        public static Product getProductFromId(int id)
+
+        public static Product[] getAllProducts()
         {
             try {
-                Connection connection = DriverManager.getConnection(connectionString);
-                PreparedStatement statement = connection.prepareStatement("SELECT * FROM PRODUCTS WHERE PRODUCT_ID = ?");
-                statement.setInt(1, id);
-                ResultSet result = statement.executeQuery();
+                Connection cnct = DriverManager.getConnection(connectionString);
+                PreparedStatement theStatement = cnct.prepareStatement("SELECT * FROM PRODUCTS");
+                    ResultSet result = theStatement.executeQuery();
+
                 while (result.next()) {
                     int product_id = result.getInt(1);
-                    String name = result.getString(2);
-                    int owner_id = result.getInt(3);
-                    String status = result.getString(4);
-                    return new Product(product_id, owner_id, name, PRODUCT_STATUS.CANCELLED);
+                    String product_name = result.getString(2);
+                    int Owner_d = result.getInt(3);
+                    String statusString = result.getString(4);
+
+                    new Product()
                 }
-            } catch (SQLException e) {
-                System.out.println("Error with getting product.");
+
+                //
+                // statements
+            } catch (Exception error) {
+                // what do we do when error occurs
             }
-            return null;
         }
+
+
 
         public static Product[] getProducts()
         {
@@ -72,14 +76,15 @@ public class Database {
                 Connection connection = DriverManager.getConnection(connectionString);
                 PreparedStatement statement = connection.prepareStatement("SELECT * FROM PRODUCTS");
                 ResultSet result = statement.executeQuery();
+
                 while (result.next()) {
                     int product_id = result.getInt(1);
                     String name = result.getString(2);
                     int owner_id = result.getInt(3);
                     String status = result.getString(4);
-
                     finalResult.add(new Product(product_id, owner_id, name, PRODUCT_STATUS.valueOf(status)));
                 }
+                connection.close();
             } catch (SQLException e) {
                 System.out.println("Error while parsing product out of many.");
             }

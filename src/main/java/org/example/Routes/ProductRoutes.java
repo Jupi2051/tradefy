@@ -13,7 +13,7 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 public class ProductRoutes implements IRouteProvider {
     public static void GetProductsRespond (Context GetProducts)
     {
-        Product[] ProductsList = Database.DatabaseControl.getProducts();
+        Product[] ProductsList = Database.DatabaseControl.getAllProducts();
         GetProducts.json(ProductsList);
     }
 
