@@ -9,7 +9,7 @@ public class SalesCommission {
     public final int buyerId;
     public final int sellerId;
 
-    SalesCommission(int id, Date date, int amount, int buyerId, int sellerId)
+    public SalesCommission(int id, Date date, int amount, int buyerId, int sellerId)
     {
         this.id = id;
         this.date = date;

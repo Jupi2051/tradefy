@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Added Tables Creation in code">
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Made bid class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/SalesCommission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/SalesCommission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683216727453</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made bid class">
+      <created>1683279399509</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683279399509</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +151,7 @@
     <MESSAGE value="Added All possible routes." />
     <MESSAGE value="Added OOP" />
     <MESSAGE value="Added Tables Creation in code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tables Creation in code" />
+    <MESSAGE value="Made bid class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made bid class" />
   </component>
 </project>
