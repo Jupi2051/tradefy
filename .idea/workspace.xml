@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Added database functions for products and salles commissions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/ActiveSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/sessionsControl.java" afterDir="false" />
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Added OOP for sessions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/ActiveSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/ActiveSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/sessionsControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/sessionsControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683553314544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added OOP for sessions">
+      <created>1683555487944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683555487944</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +166,7 @@
     <MESSAGE value="Added Tables Creation in code" />
     <MESSAGE value="Made bid class" />
     <MESSAGE value="Added database functions for products and salles commissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database functions for products and salles commissions" />
+    <MESSAGE value="Added OOP for sessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added OOP for sessions" />
   </component>
 </project>
