@@ -1,7 +1,7 @@
 package org.example;
 
 import io.javalin.Javalin;
-import org.example.Database.Database;
+import org.example.Database.DatabaseControl;
 import org.example.Routes.AuthRegRoute;
 import org.example.Routes.BidRoute;
 import org.example.Routes.ProductRoutes;
@@ -9,7 +9,7 @@ import org.example.Routes.completePurchase;
 
 public class App {
     public static void main(String[] args) {
-        Database.DatabaseControl.InitilizeDatabase();
+        DatabaseControl.InitilizeDatabase();
 
         Javalin server = Javalin.create(/*config*/);
 

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.http.Context;
-import org.example.Database.Database;
+import org.example.Database.DatabaseControl;
 import org.example.OOP.IRouteProvider;
 import org.example.OOP.Product;
 
@@ -13,7 +13,7 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 public class ProductRoutes implements IRouteProvider {
     public static void GetProductsRespond (Context GetProducts)
     {
-        Product[] ProductsList = Database.DatabaseControl.getProducts();
+        Product[] ProductsList = DatabaseControl.getProducts();
         GetProducts.json(ProductsList);
     }
 
