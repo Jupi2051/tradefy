@@ -23,4 +23,9 @@ public class sessionsControl {
     {
         return activeSessionsList.removeIf((element) -> element.getSessionId() == session.getSessionId());
     }
+
+    public static boolean isSessionActive(String sessionId)
+    {
+        return activeSessionsList.stream().anyMatch((element) -> element.getSessionId() == sessionId);
+    }
 }
