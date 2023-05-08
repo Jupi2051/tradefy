@@ -18,5 +18,4 @@ public class User {
         this.Email = email;
         this.phone = phone;
     }
-
 }

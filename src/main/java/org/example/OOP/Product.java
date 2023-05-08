@@ -1,5 +1,7 @@
 package org.example.OOP;
 
+import org.example.Database.DatabaseControl;
+
 public class Product {
     public final int productId;
     public final String name;
@@ -12,10 +14,5 @@ public class Product {
         this.ownerId = ownerId;
         this.name = name;
         this.status = status;
-    }
-
-    User GetOwner()
-    {
-        return new User(0, "sample", "sample@gmail.com", "32365623");
     }
 }

@@ -67,7 +67,6 @@ public class DatabaseControl {
 
     public static void addProduct(String productName, int OwnerId)
     {
-
         try
         {
             Connection connection = DriverManager.getConnection(connectionString);

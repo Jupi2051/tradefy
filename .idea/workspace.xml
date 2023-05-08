@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="added session controls">
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Updated name conventions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683556843648</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated name conventions">
+      <created>1683557324646</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557324646</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +192,7 @@
     <MESSAGE value="Added database functions for products and salles commissions" />
     <MESSAGE value="Added OOP for sessions" />
     <MESSAGE value="added session controls" />
-    <option name="LAST_COMMIT_MESSAGE" value="added session controls" />
+    <MESSAGE value="Updated name conventions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated name conventions" />
   </component>
 </project>
