@@ -11,7 +11,7 @@ public class User {
     String getEmail() {return this.Email;}
     String getPhone() {return this.phone;}
 
-    User(int id, String name, String email, String phone)
+    public User(int id, String name, String email, String phone)
     {
         this.id = id;
         this.name = name;
