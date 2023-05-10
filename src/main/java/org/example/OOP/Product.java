@@ -3,10 +3,25 @@ package org.example.OOP;
 import org.example.Database.DatabaseControl;
 
 public class Product {
-    public final int productId;
-    public final String name;
-    public final int ownerId;
-    public PRODUCT_STATUS status;
+    int productId;
+    String name;
+    int ownerId;
+    PRODUCT_STATUS status;
+
+    public int getProductId()
+    {
+        return this.productId;
+    }
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public int Owner()
+    {
+        return this.ownerId;
+    }
 
     public Product(int id, int ownerId, String name, PRODUCT_STATUS status)
     {

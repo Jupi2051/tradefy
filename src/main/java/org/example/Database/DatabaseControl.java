@@ -250,6 +250,7 @@ public class DatabaseControl {
                 statement.setString(1, username);
                 statement.setString(2, password);
                 ResultSet result = statement.executeQuery();
+
                 while (result.next()) {
                     int user_id = result.getInt(1);
                     String user_name = result.getString(2);

@@ -1,10 +1,30 @@
 package org.example.OOP;
 
 public class Bid {
-    public final int id;
-    public final int productId;
-    public final int userId;
-    public final double Amount;
+    public int id;
+    public int productId;
+    public int userId;
+    public double Amount;
+
+    public int getId()
+    {
+        return this.id;
+    }
+
+    public int getProductId()
+    {
+        return this.productId;
+    }
+
+    public int getUserId()
+    {
+        return this.userId;
+    }
+
+    public double getAmount()
+    {
+        return this.Amount;
+    }
 
     public Bid(int id, int productId, int userId, double Amount)
     {

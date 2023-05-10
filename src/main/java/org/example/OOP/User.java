@@ -6,10 +6,10 @@ public class User {
     private String Email;
     private String phone;
 
-    int GetID() {return this.id;}
-    String getName() {return this.name;}
-    String getEmail() {return this.Email;}
-    String getPhone() {return this.phone;}
+    public int GetID() {return this.id;}
+    public String getName() {return this.name;}
+    public String getEmail() {return this.Email;}
+    public String getPhone() {return this.phone;}
 
     public User(int id, String name, String email, String phone)
     {
