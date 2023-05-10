@@ -9,7 +9,7 @@ import org.example.Routes.completePurchase;
 
 public class App {
     public static void main(String[] args) {
-        DatabaseControl.InitilizeDatabase();
+        DatabaseControl.Database.InitilizeDatabase();
 
         Javalin server = Javalin.create(/*config*/);
 

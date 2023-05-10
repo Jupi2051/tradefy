@@ -27,17 +27,12 @@ public class ProductRoutes implements IRouteProvider {
         GetProduct.result("The product");
     }
 
-    public static void DeleteProductRespond (Context DeleteProduct)
-    {
-        DeleteProduct.result("Product deleted");
-    }
     public EndpointGroup GetRouteData() {
         return () -> {
             path ("/api", () -> {
                 path("/product", () -> {
                     post(ProductRoutes::PostProductRespond);
                     get(ProductRoutes::GetProductRespond);
-                    delete(ProductRoutes::DeleteProductRespond);
                 });
                 path ("/products", () -> get(ProductRoutes::GetProductsRespond));
             });
