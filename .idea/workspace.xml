@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Made database class static">
-      <change afterPath="$PROJECT_DIR$/Backend.rar" afterDir="false" />
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Adjusted endpoints">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683672353185</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Routes">
+      <created>1683708775069</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683708775069</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adjusted endpoints">
+      <created>1683711265504</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683711265504</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +229,8 @@
     <MESSAGE value="OOP tidying" />
     <MESSAGE value="Merged new database functions" />
     <MESSAGE value="Made database class static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made database class static" />
+    <MESSAGE value="Routes" />
+    <MESSAGE value="Adjusted endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted endpoints" />
   </component>
 </project>

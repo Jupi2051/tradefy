@@ -27,13 +27,6 @@ public class ProductRoutes implements IRouteProvider {
     public static void GetProductRespond (Context GetProduct)
     {
         String id = GetProduct.pathParam("id");
-        System.out.println(id);
-        Product foundProduce = DatabaseControl.Database.getProductById(Integer.parseInt(id));
-
-        if (foundProduce != null)
-            GetProduct.json(foundProduce);
-
-        GetProduct.status(501);
     }
 
     public EndpointGroup GetRouteData() {

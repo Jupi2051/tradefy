@@ -173,9 +173,9 @@ public class DatabaseControl {
                 Connection connection = DriverManager.getConnection(connectionString);
                 PreparedStatement theStatement = connection.prepareStatement("INSERT INTO USERS (USER_NAME, EMAIL, PHONE_NUMBER, PASSWORD) VALUES (?, ?, ?, ?)");
                 theStatement.setString(1, userName);
-                theStatement.setString(2, phoneNo);
-                theStatement.setString(3, password);
-                theStatement.setString(4, email);
+                theStatement.setString(2, email);
+                theStatement.setString(3, phoneNo);
+                theStatement.setString(4, password);
                 theStatement.execute();
             } catch (SQLException e) {
                 System.out.println("Error while getting product by ID");
