@@ -9,7 +9,11 @@ import io.javalin.http.Context;
 public class AuthRegRoute implements IRouteProvider {
 	public static void ResponseToAuthenticatePost(Context authpost)
     {
-        authpost.result("Auth post example");
+        String Username = authpost.formParam("username");
+        String Password = authpost.formParam("password");
+
+        DatabaseControl.Database.getUser(Username, Password);
+        authpost.status(200);
     }
 	
 	public static void ResponseToRegisterPost(Context regpost)
