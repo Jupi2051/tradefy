@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Finalized bid and auth endpoints">
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Updated OOP Getters">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/MainRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/SalesCommission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/SalesCommission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683739201906</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated OOP Getters">
+      <created>1683743190948</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683743190948</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +254,7 @@
     <MESSAGE value="Routes" />
     <MESSAGE value="Adjusted endpoints" />
     <MESSAGE value="Finalized bid and auth endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalized bid and auth endpoints" />
+    <MESSAGE value="Updated OOP Getters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated OOP Getters" />
   </component>
 </project>

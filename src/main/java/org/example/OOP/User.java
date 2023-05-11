@@ -1,10 +1,10 @@
 package org.example.OOP;
 
 public class User {
-    private int id;
-    private String name;
-    private String Email;
-    private String phone;
+    int id;
+    String name;
+    String Email;
+    String phone;
 
     public int GetID() {return this.id;}
     public String getName() {return this.name;}
