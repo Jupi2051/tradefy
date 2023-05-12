@@ -14,19 +14,23 @@ public class ProductRoutes implements IRouteProvider {
     public static void GetProductsRespond (Context GetProducts)
     {
         Product[] ProductsList = DatabaseControl.Database.getProducts();
-
         GetProducts.json(ProductsList);
     }
 
     public static void PostProductRespond (Context PostProduct)
     {
         String productName = PostProduct.formParam("name");
+        String OwnerId = PostProduct.formParam("OwnerId");
+        Integer.parseInt(OwnerId);
+        DatabaseControl.Database.addProduct(productName, Integer.parseInt(OwnerId) );
         PostProduct.result(productName);
     }
 
     public static void GetProductRespond (Context GetProduct)
     {
         String id = GetProduct.pathParam("id");
+        Product foundProduct = DatabaseControl.Database.getProductById(Integer.parseInt(id));
+        GetProduct.json(foundProduct);
     }
 
     public EndpointGroup GetRouteData() {

@@ -7,13 +7,13 @@ import io.javalin.http.staticfiles.Location;
 import org.example.Database.DatabaseControl;
 import org.example.Routes.*;
 
+import java.util.Date;
+
 public class App {
     public static String FrontEndDirectory = "C:\\Users\\Jupii\\Desktop\\Frontend";
 
     public static void main(String[] args) {
         DatabaseControl.Database.InitilizeDatabase();
-
-//        staticFilesConfig.add("/public", Location.);
 
         Javalin server = Javalin.create(config -> {
             config.routing.ignoreTrailingSlashes = true;

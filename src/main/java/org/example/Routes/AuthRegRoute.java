@@ -19,6 +19,7 @@ public class AuthRegRoute implements IRouteProvider {
 
         if (foundUser != null) {
             ActiveSession sessionData = sessionsControl.InitiateSession(foundUser);
+            System.out.println("Successfully Initiated session for user [" + foundUser.GetID() + "] " + foundUser.getName());
             authpost.status(200).json(sessionData);
         } else {
             authpost.status(401);
