@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/MainRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/MainRoute.java" afterDir="false" />
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Adjusted OOP Work">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/ActiveSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/ActiveSession.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683966295246</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Adjusted OOP Work">
+      <created>1683970858125</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683970858125</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +288,7 @@
     <MESSAGE value="Added Main routing for pages routing." />
     <MESSAGE value="Product endpoints and building setup" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="Adjusted OOP Work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted OOP Work" />
   </component>
 </project>

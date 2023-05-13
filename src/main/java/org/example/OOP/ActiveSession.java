@@ -10,6 +10,11 @@ public class ActiveSession {
         this.user = user;
     }
 
+    public void setSessionId(String NewId)
+    {
+        this.sessionId = NewId;
+    }
+
     public String getSessionId()
     {
         return this.sessionId;
