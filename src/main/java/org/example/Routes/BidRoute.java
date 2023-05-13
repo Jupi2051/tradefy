@@ -45,7 +45,7 @@ public class BidRoute implements IRouteProvider {
             path("/api", () -> {
                 path("/bid", () -> {
                     post(BidRoute::ResponseToBidPost);
-                    delete("{id}", BidRoute::ResponseToBidDelete);
+                    delete("/{product_id}/{user_id}", BidRoute::ResponseToBidDelete);
                     patch(BidRoute::ResponseToBidPatch);
                 });
             });

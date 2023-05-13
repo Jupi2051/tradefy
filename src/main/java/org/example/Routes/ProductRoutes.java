@@ -5,8 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.http.Context;
 import org.example.Database.DatabaseControl;
-import org.example.OOP.IRouteProvider;
-import org.example.OOP.Product;
+import org.example.OOP.*;
 
 import static io.javalin.apibuilder.ApiBuilder.*;
 
@@ -21,16 +20,19 @@ public class ProductRoutes implements IRouteProvider {
     {
         String productName = PostProduct.formParam("name");
         String OwnerId = PostProduct.formParam("OwnerId");
-        Integer.parseInt(OwnerId);
-        DatabaseControl.Database.addProduct(productName, Integer.parseInt(OwnerId) );
-        PostProduct.result(productName);
+        DatabaseControl.Database.addProduct(productName, Integer.parseInt(OwnerId));
+        PostProduct.json(new Product(-1, Integer.parseInt(OwnerId), productName, PRODUCT_STATUS.ON_GOING));
     }
 
     public static void GetProductRespond (Context GetProduct)
     {
         String id = GetProduct.pathParam("id");
+        int IdAsInt = Integer.parseInt(id);
         Product foundProduct = DatabaseControl.Database.getProductById(Integer.parseInt(id));
-        GetProduct.json(foundProduct);
+        Bid[] Bids = DatabaseControl.Database.getBidsForProduct(IdAsInt);
+        User foundUser = DatabaseControl.Database.getUserByID(foundProduct.getOwnerId());
+
+        GetProduct.json(new ProductDataResponse(Bids, foundProduct, foundUser));
     }
 
     public EndpointGroup GetRouteData() {

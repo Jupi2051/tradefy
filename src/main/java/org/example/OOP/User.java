@@ -6,7 +6,7 @@ public class User {
     String Email;
     String phone;
 
-    public int GetID() {return this.id;}
+    public int getID() {return this.id;}
     public String getName() {return this.name;}
     public String getEmail() {return this.Email;}
     public String getPhone() {return this.phone;}

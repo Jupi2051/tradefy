@@ -70,7 +70,7 @@ public class DatabaseControl {
             try
             {
                 Connection connection = DriverManager.getConnection(connectionString);
-                PreparedStatement statement = connection.prepareStatement("INSERT INTO PRODUCTS (NAME, OWNER,STATUS) VALUES (?, ?, 'ON_GOING'");
+                PreparedStatement statement = connection.prepareStatement("INSERT INTO PRODUCTS (NAME, OWNER, STATUS) VALUES (?, ?, 'ON_GOING')");
                 statement.setString(1, productName);
                 statement.setInt(2, OwnerId);
                 statement.execute();
@@ -78,6 +78,7 @@ public class DatabaseControl {
             }
             catch (SQLException e)
             {
+                System.out.println(e.toString());
                 System.out.println("Error while parsing product out of many.");
             }
         }
@@ -182,6 +183,7 @@ public class DatabaseControl {
                 System.out.println("Error while getting product by ID");
             }
         }
+
         public static void addBids (String productId , int userId , Double amount )
         {
             try
@@ -219,6 +221,27 @@ public class DatabaseControl {
             return resultContainer.toArray(new Bid[resultContainer.size()]);
         }
 
+        public static User getUserByID(int UserId)
+        {
+            try {
+                Connection connection = DriverManager.getConnection(connectionString);
+                PreparedStatement theStatement = connection.prepareStatement("SELECT * FROM USERS WHERE USER_ID = ?");
+                theStatement.setInt(1, UserId);
+                ResultSet result = theStatement.executeQuery();
+
+                while (result.next()) {
+                    int user_id = result.getInt(1);
+                    String user_name = result.getString(2);
+                    String email = result.getString(3);
+                    String phone_number = result.getString(4);
+                    return new User(user_id, user_name, email, phone_number);
+                }
+            } catch (SQLException e) {
+                System.out.println("Error while getting bids for product by ID");
+            }
+            return null;
+        }
+
         public static void DeleteBid (String productId , int userId )
         {
             try {
@@ -231,6 +254,21 @@ public class DatabaseControl {
                 System.out.println("Error while Deleting bid");
             }
         }
+
+        public static boolean doesBidOnProductByUserExist(int ProductId, int UserId)
+        {
+            try {
+                Connection connection = DriverManager.getConnection(connectionString);
+                PreparedStatement theStatement = connection.prepareStatement("SELECT * FROM BIDS WHERE USER_ID = ? AND PRODUCT_ID = ?");
+                theStatement.setInt(1, UserId);
+                theStatement.setInt(2, ProductId);
+                return theStatement.executeQuery().next();
+            } catch (SQLException e) {
+                System.out.println("Error while getting bids for product by ID and User id");
+            }
+            return false;
+        }
+
         public static void UpdateBid (String productId , int userId , Double amount ) {
             try {
                 Connection connection = DriverManager.getConnection(connectionString);
@@ -247,7 +285,7 @@ public class DatabaseControl {
         public static User getUser(String username, String password) {
             try {
                 Connection connection = DriverManager.getConnection(connectionString);
-                PreparedStatement statement = connection.prepareStatement("SELECT * FROM USERS WHERE USER_NAME = ? AND PASSWORD = ?");
+                PreparedStatement statement = connection.prepareStatement("SELECT * FROM USERS WHERE EMAIL = ? AND PASSWORD = ?");
                 statement.setString(1, username);
                 statement.setString(2, password);
                 ResultSet result = statement.executeQuery();

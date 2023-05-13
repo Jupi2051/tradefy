@@ -73,7 +73,7 @@ public class MainRoute implements IRouteProvider
             get("/guidelines", MainRoute::GuidelinesPage);
             get("/login", MainRoute::LoginPage);
             get("/register", MainRoute::RegisterPage);
-            get("/product", MainRoute::ProductPage);
+            get("/product/{id}", MainRoute::ProductPage);
             get("/sell", MainRoute::SellPage);
         };
     }

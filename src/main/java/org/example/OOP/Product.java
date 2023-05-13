@@ -18,10 +18,11 @@ public class Product {
         return this.name;
     }
 
-    public int Owner()
+    public int getOwnerId()
     {
         return this.ownerId;
     }
+    public PRODUCT_STATUS getProductStatus() {return this.status;}
 
     public Product(int id, int ownerId, String name, PRODUCT_STATUS status)
     {

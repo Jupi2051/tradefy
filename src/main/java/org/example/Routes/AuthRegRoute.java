@@ -19,7 +19,7 @@ public class AuthRegRoute implements IRouteProvider {
 
         if (foundUser != null) {
             ActiveSession sessionData = sessionsControl.InitiateSession(foundUser);
-            System.out.println("Successfully Initiated session for user [" + foundUser.GetID() + "] " + foundUser.getName());
+            System.out.println("Successfully Initiated session for user [" + foundUser.getID() + "] " + foundUser.getName());
             authpost.status(200).json(sessionData);
         } else {
             authpost.status(401);
@@ -37,7 +37,26 @@ public class AuthRegRoute implements IRouteProvider {
         regpost.status(200);
     }
 	
-	
+	public static void GetSessionData(Context ctx)
+    {
+        String sessionId = ctx.formParam("sessionId");
+        System.out.println(sessionId);
+        if (sessionsControl.isSessionActive(sessionId) == false) {
+            ctx.result("session is inactive");
+            return;
+        }
+        ActiveSession session = sessionsControl.getSessionFromId(sessionId);
+        ctx.json(session);
+    }
+
+    public static void GetUserData(Context ctx)
+    {
+        String id = ctx.pathParam("id");
+        int parsedId = Integer.parseInt(id);
+        User user = DatabaseControl.Database.getUserByID(parsedId);
+        ctx.json(user);
+    }
+
 	public EndpointGroup GetRouteData()
     { /*tradefy.com/api/register*/
         return () -> {
@@ -47,6 +66,12 @@ public class AuthRegRoute implements IRouteProvider {
                 });
                 path("/register", () -> {
                     post(AuthRegRoute::ResponseToRegisterPost);
+                });
+                path("/sessionData", () -> {
+                   post(AuthRegRoute::GetSessionData);
+                });
+                path("/user-data/{id}", () -> {
+                   get(AuthRegRoute::GetUserData);
                 });
             });
        };
