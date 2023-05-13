@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Product endpoints and building setup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/ProductDataResponse.java" afterDir="false" />
+    <list default="true" id="ca7ad0a1-3884-4da8-8bef-437d3844bcd1" name="Changes" comment="Final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database/DatabaseControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Bid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OOP/sessionsControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OOP/sessionsControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/AuthRegRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/BidRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/BidRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/MainRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/MainRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/ProductRoutes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Routes/completePurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Routes/completePurchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683880614063</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Final">
+      <created>1683966295246</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683966295246</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +287,7 @@
     <MESSAGE value="Updated OOP Getters" />
     <MESSAGE value="Added Main routing for pages routing." />
     <MESSAGE value="Product endpoints and building setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product endpoints and building setup" />
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
 </project>

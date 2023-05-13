@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DatabaseControl {
     public static class Database {
-        private static String connectionString = "jdbc:sqlserver://localhost;encrypt=false;integratedSecurity=false;user=auctionApp;password=1234";
+        private static String connectionString = "jdbc:sqlserver://localhost;encrypt=false;integratedSecurity=false;user=auctionApp;password=Jupii@sys@";
 
         public static boolean InitilizeDatabase() {
             try {

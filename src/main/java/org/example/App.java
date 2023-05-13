@@ -10,7 +10,7 @@ import org.example.Routes.*;
 import java.util.Date;
 
 public class App {
-    public static String FrontEndDirectory = "C:\\Users\\Jupii\\Desktop\\Frontend";
+    public static String FrontEndDirectory = "/home/ec2-user/Frontend";
 
     public static void main(String[] args) {
         DatabaseControl.Database.InitilizeDatabase();

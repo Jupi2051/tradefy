@@ -33,4 +33,12 @@ public class Bid {
         this.userId = userId;
         this.Amount = Amount;
     }
+
+    public Bid (Bid copy)
+    {
+        this.id = copy.id;
+        this.productId = copy.productId;
+        this.userId = copy.userId;
+        this.Amount = copy.Amount;
+    }
 }

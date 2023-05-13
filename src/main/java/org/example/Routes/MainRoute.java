@@ -20,7 +20,7 @@ public class MainRoute implements IRouteProvider
     public static String getHTMLFileData(String fileName)
     {
         try {
-            String htmlData = Files.readString(Paths.get(App.FrontEndDirectory + "\\HTML\\"+fileName), Charset.defaultCharset());
+            String htmlData = Files.readString(Paths.get(App.FrontEndDirectory + "/HTML/"+fileName), Charset.defaultCharset());
             return htmlData;
         } catch (Exception e)
         {

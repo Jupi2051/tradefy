@@ -31,4 +31,12 @@ public class Product {
         this.name = name;
         this.status = status;
     }
+
+    public Product(Product copy)
+    {
+        this.productId = copy.productId;
+        this.name = copy.name;
+        this.ownerId = copy.ownerId;
+        this.status = copy.status;
+    }
 }
